@@ -1,7 +1,7 @@
 /* colors */
 /* font and typography */
 /* z index */
-/*========== BASE ==========*/
+/*========== Reset ==========*/
 *,
 ::before,
 ::after {
@@ -10,6 +10,30 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*========== Base ==========*/
 h1,
 h2,
 h3,
