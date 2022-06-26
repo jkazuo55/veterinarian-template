@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 // compile scss into css
 function style() {
     // 1. where is my scss file
-    return gulp.src('./scss/**/*.scss')
+    return gulp.src('./scss/*.scss')
         // 2. pass that file through sass compiler
         .pipe(sass({
             outputStyle: 'expanded',
