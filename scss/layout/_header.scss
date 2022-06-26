@@ -1,0 +1,64 @@
+/* ==================== start header section ===================== */
+
+.navbar {
+    min-width: min(525px, 40vw);
+    background-color: red;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        background: rebeccapurple;
+        width: 100%;
+        li a {
+            font-size: clamp(25px, 2.5vw, 29.17px);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #FFFF;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.heading {
+    max-width: 100%;
+    background-color: #EAAE00;
+    .container {
+        max-width: 1224px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 33px;
+        padding-bottom: 33px;
+        align-items: center;
+    }
+    &__checkbox,
+    &__toggle {
+        display: none;
+    }
+    &__search {
+        display: flex;
+        justify-content: center;
+        input {
+            height: 52px;
+            width: 204px;
+            background-color: #FFC500;
+            border: none;
+            padding: 17px 20px;
+        }
+        input::placeholder {
+            color: #FFFF;
+            font-size: 21px;
+            letter-spacing: 0px;
+            font-weight: 400;
+            font-family: "Poppins";
+        }
+        span {
+            width: 72px;
+            height: 52px;
+            background-color: #00BFCA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #FFFF;
+        }
+    }
+}
