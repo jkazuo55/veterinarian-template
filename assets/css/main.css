@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* colors */
 /* font and typography */
 /* z index */
@@ -10,6 +11,7 @@
   box-sizing: border-box;
 }
 
+/*========== Fonts ==========*/
 /*========== Base ==========*/
 h1,
 h2,
@@ -164,4 +166,49 @@ img {
   .heading #menu-toggle:checked ~ .heading__search {
     display: flex;
   }
+}
+
+.section-hero {
+  background-color: #fcc302;
+}
+.section-hero .container {
+  max-width: 1184px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.section-hero__info {
+  flex: 0 1 660px;
+}
+.section-hero__info h1 {
+  font-size: clamp(40px, 5vw, 67px);
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Poppins";
+  padding-bottom: clamp(20px, 4vw, 50px);
+}
+.section-hero__info p {
+  font-size: clamp(20px, 2.5vw, 29px);
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Poppins";
+  padding-bottom: clamp(20px, 4vw, 48px);
+}
+.section-hero_graphic {
+  flex: 0 1 419px;
+}
+
+.first-btn {
+  font-size: 21px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Poppins";
+  background-color: #00BFCA;
+  padding: 20px 33px;
+  border-radius: 7px;
 }

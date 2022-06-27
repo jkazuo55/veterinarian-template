@@ -1,0 +1,11 @@
+@use 'abstracts/variables' as var;
+.first-btn {
+    font-size: 21px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    background-color: var.$color3;
+    padding: 20px 33px;
+    border-radius: 7px;
+}
