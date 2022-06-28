@@ -1,11 +1,5 @@
 @use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mixin;
 .first-btn {
-    font-size: 21px;
-    letter-spacing: 0px;
-    color: #ffffff;
-    font-weight: 600;
-    font-family: "Poppins";
-    background-color: var.$color3;
-    padding: 20px 33px;
-    border-radius: 7px;
+    @include mixin.first-btn(var.$color3, var.$color4);
 }

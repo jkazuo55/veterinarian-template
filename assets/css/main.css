@@ -203,12 +203,18 @@ img {
 }
 
 .first-btn {
-  font-size: 21px;
-  letter-spacing: 0px;
-  color: #ffffff;
-  font-weight: 600;
-  font-family: "Poppins";
   background-color: #00BFCA;
-  padding: 20px 33px;
+  font-size: 21px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   border-radius: 7px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 25px 33px;
+}
+.first-btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 190, 202, 0.5);
 }
