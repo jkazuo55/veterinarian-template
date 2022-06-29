@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 /* colors */
 /* font and typography */
 /* z index */
@@ -200,6 +200,61 @@ img {
 }
 .section-hero_graphic {
   flex: 0 1 419px;
+}
+
+.row > * {
+  padding: 0;
+}
+
+.pricing {
+  background-color: #fcc302;
+}
+.pricing .container {
+  max-width: 1226px;
+}
+.pricing__title {
+  max-width: 745px;
+  margin: auto;
+}
+.pricing__title h2 {
+  font-size: 75px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 102px;
+  padding-bottom: 22px;
+}
+.pricing__title p {
+  font-size: 33px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing__card {
+  max-width: 408px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing__card__body h4 {
+  font-size: 42px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 37px;
+  padding-bottom: 20px;
+}
+.pricing__card__body .first-btn {
+  margin-bottom: 112px;
 }
 
 .first-btn {
