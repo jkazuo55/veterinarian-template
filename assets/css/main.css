@@ -287,7 +287,6 @@ img {
   flex: 0 1 419px;
 }
 
-<<<<<<< HEAD
 /* ==================== start section resuts ===================== */
 .section-results {
   background-image: url(/assets/img/bg-results.png);
@@ -336,11 +335,6 @@ img {
   background-color: red;
 }
 
-.first-btn {
-  font-size: 21px;
-  letter-spacing: 0px;
-  color: #ffffff;
-=======
 .row > * {
   padding: 0;
 }
@@ -386,7 +380,6 @@ img {
 .pricing__card__body h4 {
   font-size: 42px;
   color: #FFFFFF;
->>>>>>> b9c0768b367761e2503fef2dbc8cb82d5f271871
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   text-align: center;

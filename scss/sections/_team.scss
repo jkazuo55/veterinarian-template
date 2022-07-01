@@ -12,12 +12,12 @@
         margin: auto;
 
         &  h2{
-            @include mixin.veterinarian-h2(var.$color6, center);
+            @include mixin.veterinarian-h2(var.$color9, center);
             padding-top: 134px;
             padding-bottom: 23px;
         }
         & p{
-            @include mixin.veterinarian-p(33px, var.$color6, center);
+            @include mixin.veterinarian-p(33px, var.$color9, center);
             padding-bottom: 89px;
             line-height: 40px;
         }
@@ -40,14 +40,14 @@
             // align-items: center;
 
             & h5{
-                @include mixin.veterinarian-h2(var.$color6, center);
+                @include mixin.veterinarian-h2(var.$color9, center);
                 font-size: 29px;
                 padding-top: 37px;
                 padding-bottom: 6px;
                 
             }
             & p{
-                @include mixin.veterinarian-p(25px, var.$color6, center);
+                @include mixin.veterinarian-p(25px, var.$color9, center);
                 padding-bottom: 21px;
                 
             }
