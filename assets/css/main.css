@@ -168,6 +168,89 @@ img {
   }
 }
 
+/* ==================== start section footer ===================== */
+.section-footer {
+  background-color: rgb(51, 51, 51);
+  background-position: center;
+}
+.section-footer .container {
+  max-width: 1184px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  padding-top: 164px;
+  padding-bottom: 191px;
+}
+.section-footer .col h3,
+.section-footer .col-6 h3 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.section-footer .col h3 {
+  padding-bottom: 13px;
+}
+.section-footer .col-6 {
+  text-align: right;
+  max-width: 557px;
+}
+.section-footer .col-6 h3 {
+  line-height: 8px;
+  padding-bottom: 25px;
+}
+.section-footer .col-6 p {
+  padding-bottom: 50px;
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: 400;
+}
+.section-footer .col ul li a {
+  font-size: 25px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.section-footer__group-input {
+  max-width: 531px;
+  height: 90px;
+}
+.section-footer__group-input input {
+  background-color: rgb(218, 172, 0);
+  border: none;
+  max-width: 386px;
+  width: 100%;
+}
+.section-footer__group-input span {
+  border: none;
+  background-color: #00BFCA;
+  max-width: 145px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-footer__group-input span i {
+  color: #FFFFFF;
+  font-size: 33px;
+}
+.section-footer__icons {
+  padding-top: 34px;
+}
+.section-footer__icons ul {
+  display: flex;
+  justify-content: right;
+  column-gap: 17px;
+}
+.section-footer__icons li a {
+  color: rgb(51, 51, 51);
+}
+.section-footer__icons li a i {
+  width: 44px;
+  line-height: 44px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
 .section-hero {
   background-color: #fcc302;
 }
@@ -200,6 +283,54 @@ img {
 }
 .section-hero_graphic {
   flex: 0 1 419px;
+}
+
+/* ==================== start section resuts ===================== */
+.section-results {
+  background-image: url(/assets/img/bg-results.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 576px;
+}
+.section-results .container {
+  max-width: 1184px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  padding-top: 164px;
+  padding-bottom: 164px;
+}
+.section-results__box {
+  justify-content: space-between;
+  column-gap: 150px;
+}
+.section-results__item {
+  text-align: center;
+}
+.section-results__item h4 {
+  font-size: 42px;
+  font-weight: 500;
+  padding-top: 56px;
+  padding-bottom: 4px;
+}
+.section-results__item h3 {
+  font-size: 38px;
+  font-weight: 700;
+}
+.section-results__item img {
+  object-fit: contain;
+}
+
+/* ==================== start section posts===================== */
+.section-posts .container {
+  max-width: 1184px;
+  color: rgb(49, 50, 67);
+  font-family: "Poppins", sans-serif;
+  padding-top: 164px;
+  padding-bottom: 164px;
+}
+.section-posts__card {
+  background-color: red;
 }
 
 .first-btn {
