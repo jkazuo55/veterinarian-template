@@ -16,6 +16,8 @@
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 ul {
   margin: 0;
@@ -255,6 +257,91 @@ img {
 }
 .pricing__card__body .first-btn {
   margin-bottom: 112px;
+}
+
+.row > * {
+  padding: 0;
+}
+
+.team .container {
+  max-width: 1197px;
+}
+.team__title {
+  max-width: 745px;
+  margin: auto;
+}
+.team__title h2 {
+  font-size: 75px;
+  color: #313243;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 134px;
+  padding-bottom: 23px;
+}
+.team__title p {
+  font-size: 33px;
+  color: #313243;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 89px;
+  line-height: 40px;
+}
+.team__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__card {
+  max-width: 399px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+.team__card__body {
+  display: flex;
+  flex-direction: column;
+}
+.team__card__body h5 {
+  font-size: 75px;
+  color: #313243;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 29px;
+  padding-top: 37px;
+  padding-bottom: 6px;
+}
+.team__card__body p {
+  font-size: 25px;
+  color: #313243;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 21px;
+}
+.team__card__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 199px;
+  margin: auto;
+  padding-bottom: 139px;
+}
+.team__card__icons a {
+  width: 35px;
+  height: 35px;
+  margin: 0 7px;
+  border: 1px solid #fcc302;
+  border-radius: 50%;
+  background-color: #fcc302;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team__card__icons i {
+  font-size: 20px;
+  color: #FFFFFF;
 }
 
 .first-btn {
