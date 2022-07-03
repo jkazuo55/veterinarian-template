@@ -1,122 +1,137 @@
 @use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mixin;
 
 /* ==================== start header section ===================== */
 
 .navbar {
-    min-width: min(525px, 40vw);
+    max-width: 525px;
+    width: 100%;
     ul {
         display: flex;
         justify-content: space-between;
         width: 100%;
         li a {
-            font-size: clamp(19.2px, 2.5vw, 29.17px);
+            font-size: 29.17px;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             color: var.$color4;
             text-transform: capitalize;
+            @include mixin.media-query(max-width, var.$extra-large-screen) {
+                font-size: 23px;
+            }
+            @include mixin.media-query(max-width, var.$large-screen) {
+                font-size: 19.2px;
+            }
         }
-        @media (max-width:768px) {
+        @include mixin.media-query(max-width, var.$medium-screen) {
             flex-direction: column;
             align-items: center;
         }
     }
-    @media (max-width:768px) {
-        display: none;
-        flex-basis: 100%;
+    @include mixin.media-query(max-width, var.$medium-screen) {
+        max-width: 100%;
     }
 }
 
 .heading {
-    max-width: 100%;
     background-color: var.$color1;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
     .container {
-        max-width: 1224px;
-        display: flex;
-        justify-content: space-between;
         padding-top: 33px;
         padding-bottom: 33px;
-        align-items: center;
-        @media (max-width: 768px) {
-            flex-wrap: wrap;
-        }
     }
     &__logo {
-        max-width: clamp(180px, 20vw, 100%);
-        @media (max-width: 768px) {
-            flex-basis: 50%;
-        }
+        max-width: 100%;
     }
-    &__checkbox {
-        display: none;
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include mixin.media-query(min-width, var.$extra-extra-large-screen) {
+            max-width: 871px;
+        }
+        @include mixin.media-query(max-width, var.$extra-extra-large-screen) {
+            max-width: 850px;
+        }
+        @include mixin.media-query(max-width, var.$extra-large-screen) {
+            max-width: 700px;
+        }
+        @include mixin.media-query(max-width, var.$large-screen) {
+            max-width: 465px;
+        }
+        @include mixin.media-query(max-width, var.$medium-screen) {
+            max-width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__toggle {
+        display: none;
+        cursor: pointer;
+        justify-content: end;
         span {
-            display: none;
             color: var.$color4;
+            font-size: 30px;
         }
-        @media (max-width: 768px) {
-            span:first-child {
-                display: block;
-                flex-basis: 50%;
-            }
+        @include mixin.media-query(max-width, var.$medium-screen) {
+            display: flex;
         }
     }
     &__search {
         display: flex;
-        justify-content: center;
+        max-width: 275px;
         input {
-            width: min(16vw, 203px);
-            height: min(3.7vw, 52px);
+            width: 203px;
+            height: 52px;
             background-color: var.$color2;
             border: none;
             padding: 17px 20px;
-            @media (max-width: 768px) {
+            @include mixin.media-query(max-width, var.$large-screen) {
+                width: 100px;
+                height: 42px;
+                padding: 10px 10px;
+            }
+            @include mixin.media-query(max-width, var.$medium-screen) {
                 width: 203px;
+                height: 42px;
+                padding: 10px 10px;
             }
         }
         input::placeholder {
             color: var.$color4;
-            font-size: clamp(15px, 2vw, 21px);
+            font-size: 21px;
             letter-spacing: 0px;
             font-weight: 400;
             font-family: var.$font-Poppins;
+            @include mixin.media-query(max-width, var.$large-screen) {
+                font-size: 15px;
+            }
         }
         span {
             padding-top: 17px;
             padding-bottom: 17px;
-            height: min(3.7vw, 52px);
-            width: min(3.7vw, 72px);
+            height: 52px;
+            width: 72px;
             background-color: var.$color3;
-            font-size: clamp(15px, 2vw, 21px);
+            font-size: 21px;
             color: var.$color4;
             display: flex;
             align-items: center;
             justify-content: center;
-            @media (max-width: 768px) {
-                width: 60px;
+            @include mixin.media-query(max-width, var.$large-screen) {
+                height: 42px;
+                width: 42px;
             }
         }
-        @media (max-width:768px) {
-            display: none;
-            flex-basis: 100%;
-            padding-top: 8px;
+        @include mixin.media-query(max-width, var.$medium-screen) {
+            justify-content: center;
+            margin: 0 auto;
         }
     }
-    @media (max-width:768px) {
-        #menu-toggle:checked~label span:nth-child(1) {
+    @include mixin.media-query(max-width, var.$medium-screen) {
+        .hide {
             display: none;
-        }
-        #menu-toggle:checked~label span:nth-child(2) {
-            display: block;
-        }
-        #menu-toggle:checked~.navbar {
-            display: block;
-            order: 4;
-        }
-        #menu-toggle:checked~.heading__search {
-            display: flex;
         }
     }
 }

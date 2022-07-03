@@ -1,3 +1,6 @@
+@use 'abstracts/mixins' as mixin;
+@use 'abstracts/variables' as var;
+
 /*========== Fonts ==========*/
 
 
@@ -26,4 +29,10 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.container {
+    @include mixin.media-query(min-width, var.$extra-large-screen) {
+        max-width: 1184px;
+    }
 }

@@ -12,30 +12,31 @@
 </head>
 
 <body>
-
     <header class="heading">
         <div class="container">
-            <div class="heading__logo">
-                <img src="./assets/img/logo.PNG" alt="logo">
-            </div>
-            <input type="checkbox" id="menu-toggle" class="heading__checkbox">
-            <label for="menu-toggle" class="heading__toggle">
-                <span ><i class="fa-solid fa-bars"></i></span>
-                <span ><i class="fa-solid fa-xmark"></i></span>
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
-            <div class="heading__search">
-                <input type="search" placeholder="Search...">
-                <span>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
+            <div class="row justify-content-between align-items-center gap-3">
+                <div class="col col-md-auto heading__logo">
+                    <img src="./assets/img/logo.PNG" alt="logo">
+                </div>
+                <div class="col-3 heading__toggle">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </div>
+                <div class="col-12 col-md-auto heading__navigation gap-3">
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">service</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="heading__search">
+                        <input type="search" placeholder="Search...">
+                        <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -123,11 +124,10 @@
                 <div class="row">
                     <div class="pricing__title col-12">
                         <h2>Title Here</h2>
-                        <p> Lorem Ipsum available, but the majority have
-                        suffered alteration in some form.</p>
+                        <p> Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                     </div>
                 </div>
-              <div class="row">
+                <div class="row">
                     <div class="pricing__container col-md-4 col-12">
                         <div class="pricing__card">
                             <img src="assets/img/dog1.png" class="card-img-top" alt="...">
@@ -141,7 +141,7 @@
                         <div class="pricing__card">
                             <img src="assets/img/dog2.png" class="card-img-top" alt="...">
                             <div class="pricing__card__body">
-                                <h4>$40    $25</h4>
+                                <h4>$40 $25</h4>
                                 <a href="#" class="first-btn">$200.00</a>
                             </div>
                         </div>
@@ -150,7 +150,7 @@
                         <div class="pricing__card">
                             <img src="assets/img/dog3.png" class="card-img-top" alt="...">
                             <div class="pricing__card__body">
-                                <h4>$45    $20</h4>
+                                <h4>$45 $20</h4>
                                 <a href="#" class="first-btn">$250.00</a>
                             </div>
                         </div>
@@ -163,58 +163,57 @@
                 <div class="row">
                     <div class="team__title col-12">
                         <h2>The vetcare team</h2>
-                        <p> Lorem Ipsum available, but the majority have
-                            suffered alteration in some form.</p>
+                        <p> Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                     </div>
                 </div>
-              <div class="row">
-                <div class="team__container col-md-4 col-12">
-                    <div class="team__card">
-                        <img src="assets/img/team1.png" class="card-img-top" alt="...">
-                        <div class="team__card__body">
-                            <h5>Jennifer Mullen</h5>
-                            <p>VETERINARY</p>
-                            <div class="team__card__icons">
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <div class="row">
+                    <div class="team__container col-md-4 col-12">
+                        <div class="team__card">
+                            <img src="assets/img/team1.png" class="card-img-top" alt="...">
+                            <div class="team__card__body">
+                                <h5>Jennifer Mullen</h5>
+                                <p>VETERINARY</p>
+                                <div class="team__card__icons">
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="team__container col-md-4 col-12">
-                    <div class="team__card">
-                        <img src="assets/img/team2.png" class="card-img-top" alt="...">
-                        <div class="team__card__body">
-                            <h5>Sheeren Collins</h5>
-                            <p>ADMINISTRATION</p>
-                            <div class="team__card__icons">
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <div class="team__container col-md-4 col-12">
+                        <div class="team__card">
+                            <img src="assets/img/team2.png" class="card-img-top" alt="...">
+                            <div class="team__card__body">
+                                <h5>Sheeren Collins</h5>
+                                <p>ADMINISTRATION</p>
+                                <div class="team__card__icons">
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="team__container col-md-4 col-12">
-                    <div class="team__card">
-                        <img src="assets/img/team3.png" class="card-img-top" alt="...">
-                        <div class="team__card__body">
-                            <h5>Jennifer Mullen</h5>
-                            <p>VETERINARY</p>
-                            <div class="team__card__icons">
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <div class="team__container col-md-4 col-12">
+                        <div class="team__card">
+                            <img src="assets/img/team3.png" class="card-img-top" alt="...">
+                            <div class="team__card__body">
+                                <h5>Jennifer Mullen</h5>
+                                <p>VETERINARY</p>
+                                <div class="team__card__icons">
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
         <section class="section-results">
             <div class="container">
@@ -323,9 +322,10 @@
             </div>
         </div>
     </footer>
-    
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>
