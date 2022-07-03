@@ -339,6 +339,269 @@ img {
   margin: 0 auto;
 }
 
+/* ==================== start section resuts ===================== */
+.section-results {
+  background-image: url(/assets/img/bg-results.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 576px;
+}
+.section-results .container {
+  max-width: 1184px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  padding-top: 164px;
+  padding-bottom: 164px;
+}
+.section-results__box {
+  justify-content: space-between;
+  column-gap: 150px;
+}
+.section-results__item {
+  text-align: center;
+}
+.section-results__item h4 {
+  font-size: 42px;
+  font-weight: 500;
+  padding-top: 56px;
+  padding-bottom: 4px;
+}
+.section-results__item h3 {
+  font-size: 38px;
+  font-weight: 700;
+}
+.section-results__item img {
+  object-fit: contain;
+}
+
+/* ==================== start section posts===================== */
+.section-posts .container {
+  max-width: 1184px;
+  color: rgb(49, 50, 67);
+  font-family: "Poppins", sans-serif;
+  padding-top: 164px;
+  padding-bottom: 164px;
+}
+.section-posts__card {
+  background-color: red;
+}
+
+.row > * {
+  padding: 0;
+}
+
+.pricing {
+  background-color: #fcc302;
+}
+.pricing .container {
+  max-width: 1226px;
+}
+.pricing__title {
+  max-width: 745px;
+  margin: auto;
+}
+.pricing__title h2 {
+  font-size: 75px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 102px;
+  padding-bottom: 22px;
+}
+.pricing__title p {
+  font-size: 33px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing__card {
+  max-width: 408px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing__card__body h4 {
+  font-size: 42px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 37px;
+  padding-bottom: 20px;
+}
+.pricing__card__body .first-btn {
+  margin-bottom: 112px;
+}
+
+.row > * {
+  padding: 0;
+}
+
+.team .container {
+  max-width: 1197px;
+}
+.team__title {
+  max-width: 745px;
+  margin: auto;
+}
+.team__title h2 {
+  font-size: 75px;
+  color: #313243;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 134px;
+  padding-bottom: 23px;
+}
+.team__title p {
+  font-size: 33px;
+  color: #313243;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 89px;
+  line-height: 40px;
+}
+.team__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__card {
+  max-width: 399px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+.team__card__body {
+  display: flex;
+  flex-direction: column;
+}
+.team__card__body h5 {
+  font-size: 75px;
+  color: #313243;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 29px;
+  padding-top: 37px;
+  padding-bottom: 6px;
+}
+.team__card__body p {
+  font-size: 25px;
+  color: #313243;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 21px;
+}
+.team__card__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 199px;
+  margin: auto;
+  padding-bottom: 139px;
+}
+.team__card__icons a {
+  width: 35px;
+  height: 35px;
+  margin: 0 7px;
+  border: 1px solid #fcc302;
+  border-radius: 50%;
+  background-color: #fcc302;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team__card__icons i {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.row > * {
+  padding: 0;
+}
+
+.presentation__description {
+  padding-top: 209px;
+  padding-bottom: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.presentation__description h2 {
+  font-size: 50px;
+  color: #313243;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  padding-bottom: 30px;
+}
+.presentation__description p {
+  font-size: 29px;
+  color: #313243;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  padding-bottom: 40px;
+}
+.presentation__description a {
+  background-color: #fcc302;
+  font-size: 21px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border-radius: 7px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 25px 33px;
+  border: 3px solid #00BFCA;
+}
+.presentation__description a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 190, 202, 0.5);
+}
+@media (max-width: 768px) {
+  .presentation__description a {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 15px 20px;
+  }
+}
+
+.presentation__video {
+  padding-top: 139px;
+}
+.presentation__video .img-video {
+  background-image: url("../../assets/img/play-two.png");
+  max-width: 507px;
+  width: 100%;
+  max-height: 481px;
+  height: 100%;
+  position: relative;
+}
+.presentation__video .img-video img {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+.presentation__video .video-click {
+  max-width: 507px;
+  width: 100%;
+  max-height: 481px;
+  display: none;
+}
+
 .first-btn {
   background-color: #00BFCA;
   font-size: 21px;

@@ -1,0 +1,50 @@
+@use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mixin;
+.row>*{
+    padding: 0;
+}
+.presentation__description{
+    padding-top: 209px;
+    padding-bottom: 216px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    & h2{
+        @include mixin.veterinarian-h4(50px,var.$color9,right);
+        padding-bottom: 30px;
+        
+    }
+    & p{
+        @include mixin.veterinarian-p(29px,var.$color9,right);
+        padding-bottom: 40px;
+    }
+    & a{
+        @include mixin.first-btn(var.$color5,var.$color4);
+        
+    }
+}
+.presentation__video{
+    padding-top: 139px;
+
+    .img-video{
+        background-image: url("../../assets/img/play-two.png");
+        max-width: 507px;
+        width: 100%;
+        max-height: 481px;
+        height: 100%;
+        position: relative;
+        & img{
+            position: absolute;
+            left: 40%;
+            top: 40%;
+        }
+    }
+
+    .video-click{
+        max-width: 507px;
+        width: 100%;
+        max-height: 481px;
+        display: none;
+    }
+}
