@@ -1,12 +1,9 @@
 @use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mixin;
 .section-hero {
     background-color: var.$color5;
     .container {
-        max-width: 1184px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 88px;
+        padding-top: 210px;
         padding-bottom: 88px;
     }
     &__info {
@@ -28,7 +25,25 @@
             padding-bottom: clamp(20px, 4vw, 48px);
         }
     }
+    &__links {
+        @include mixin.media-query(min-width, var.$large-screen) {
+            a:first-child {
+                margin-right: 34px;
+            }
+        }
+        @include mixin.media-query(max-width, var.$medium-screen) {
+            a:first-child {
+                margin-right: 15px;
+            }
+        }
+        @include mixin.media-query(max-width, var.$small-screen) {
+            a:first-child {
+                margin-right: 5px;
+            }
+        }
+    }
     &_graphic {
         flex: 0 1 419px;
+        margin: 0 auto;
     }
 }

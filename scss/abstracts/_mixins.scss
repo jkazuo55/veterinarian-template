@@ -10,40 +10,20 @@
     display: inline-block;
     text-decoration: none;
     padding: 25px 33px;
+    border: 3px solid var.$color3;
     &:hover {
         cursor: pointer;
         background-color: rgb(0, 190, 202, .5);
+    }
+    @include media-query(max-width, var.$medium-screen) {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 15px 20px;
     }
 }
 
 
 /* Media queries */
-
-@mixin x-small-screen($minmax) {
-    @if $minmax==min-width {
-        @media (min-width: var.$small-screen) {
-            @content;
-        }
-    }
-    @else {
-        @media (max-width: var.$small-screen) {
-            @content;
-        }
-    }
-}
-
-@mixin small-screen($minmax) {
-    @if $minmax==min-width {
-        @media (min-width: var.$small-screen) {
-            @content;
-        }
-    }
-    @else {
-        @media (max-width: var.$small-screen) {
-            @content;
-        }
-    }
-}
 
 @mixin media-query($minmax, $screen) {
     @if $minmax==min-width {

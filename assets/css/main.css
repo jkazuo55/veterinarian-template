@@ -291,3 +291,100 @@ img {
   border-radius: 50%;
   font-size: 25px;
 }
+
+.section-hero {
+  background-color: #fcc302;
+}
+.section-hero .container {
+  padding-top: 210px;
+  padding-bottom: 88px;
+}
+.section-hero__info {
+  flex: 0 1 660px;
+}
+.section-hero__info h1 {
+  font-size: clamp(40px, 5vw, 67px);
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Poppins";
+  padding-bottom: clamp(20px, 4vw, 50px);
+}
+.section-hero__info p {
+  font-size: clamp(20px, 2.5vw, 29px);
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Poppins";
+  padding-bottom: clamp(20px, 4vw, 48px);
+}
+@media (min-width: 992px) {
+  .section-hero__links a:first-child {
+    margin-right: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .section-hero__links a:first-child {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .section-hero__links a:first-child {
+    margin-right: 5px;
+  }
+}
+.section-hero_graphic {
+  flex: 0 1 419px;
+  margin: 0 auto;
+}
+
+.first-btn {
+  background-color: #00BFCA;
+  font-size: 21px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border-radius: 7px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 25px 33px;
+  border: 3px solid #00BFCA;
+}
+.first-btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 190, 202, 0.5);
+}
+@media (max-width: 768px) {
+  .first-btn {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 15px 20px;
+  }
+}
+
+.first-btn--outlet {
+  background-color: transparent;
+  font-size: 21px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border-radius: 7px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 25px 33px;
+  border: 3px solid #00BFCA;
+  border: 3px solid #FFFFFF;
+}
+.first-btn--outlet:hover {
+  cursor: pointer;
+  background-color: rgba(0, 190, 202, 0.5);
+}
+@media (max-width: 768px) {
+  .first-btn--outlet {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 15px 20px;
+  }
+}
